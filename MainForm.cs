@@ -46,5 +46,10 @@ namespace Sorts
         {
             sortStrategy.Sort(arr, resultBox);
         }
+
+        private void InsertRb_CheckedChanged(object sender, EventArgs e)
+        {
+            sortStrategy = new InsertionSort();
+        }
     }
 }

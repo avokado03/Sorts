@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.bubbleRb = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.insertRb = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
@@ -65,16 +65,17 @@
             this.bubbleRb.UseVisualStyleBackColor = true;
             this.bubbleRb.CheckedChanged += new System.EventHandler(this.BubbleRb_CheckedChanged);
             // 
-            // radioButton2
+            // insertRb
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(16, 89);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.insertRb.AutoSize = true;
+            this.insertRb.Location = new System.Drawing.Point(16, 89);
+            this.insertRb.Name = "insertRb";
+            this.insertRb.Size = new System.Drawing.Size(85, 17);
+            this.insertRb.TabIndex = 2;
+            this.insertRb.TabStop = true;
+            this.insertRb.Text = "Insertion sort";
+            this.insertRb.UseVisualStyleBackColor = true;
+            this.insertRb.CheckedChanged += new System.EventHandler(this.InsertRb_CheckedChanged);
             // 
             // radioButton3
             // 
@@ -197,7 +198,7 @@
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.insertRb);
             this.Controls.Add(this.bubbleRb);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -213,7 +214,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton bubbleRb;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton insertRb;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
