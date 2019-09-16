@@ -23,7 +23,6 @@ namespace Sorts
 
         private void GenerateBtn_Click(object sender, EventArgs e)
         {
-            genArrayBox.Text = string.Empty;
             arr = ArrayGenerator.Generate();
             try
             {
@@ -44,12 +43,18 @@ namespace Sorts
 
         private void SortBtn_Click(object sender, EventArgs e)
         {
+            resultBox.Text = string.Empty;
             sortStrategy.Sort(arr, resultBox);
         }
 
         private void InsertRb_CheckedChanged(object sender, EventArgs e)
         {
             sortStrategy = new InsertionSort();
+        }
+
+        private void MergeRb_CheckedChanged(object sender, EventArgs e)
+        {
+            sortStrategy = new MergeSort();
         }
     }
 }
