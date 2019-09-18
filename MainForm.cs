@@ -45,6 +45,7 @@ namespace Sorts
         {
             resultBox.Text = string.Empty;
             sortStrategy.Sort(arr, resultBox);
+            sortBtn.Enabled = false;
         }
 
         private void InsertRb_CheckedChanged(object sender, EventArgs e)
@@ -55,6 +56,11 @@ namespace Sorts
         private void MergeRb_CheckedChanged(object sender, EventArgs e)
         {
             sortStrategy = new MergeSort();
+        }
+
+        private void CountingRb_CheckedChanged(object sender, EventArgs e)
+        {
+            sortStrategy = new CountingSort();
         }
     }
 }

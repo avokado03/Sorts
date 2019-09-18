@@ -13,7 +13,7 @@ namespace Sorts.Utils
             Random random = new Random();
             int[] arr = new int[10];
             for (int i = 0; i < arr.Length; i++)
-                arr[i] = random.Next(-10, 10);
+                arr[i] = random.Next(0, 15);
             return arr;
         }
     }

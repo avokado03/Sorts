@@ -32,7 +32,7 @@
             this.bubbleRb = new System.Windows.Forms.RadioButton();
             this.insertRb = new System.Windows.Forms.RadioButton();
             this.mergeRb = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.countingRb = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
@@ -89,16 +89,17 @@
             this.mergeRb.UseVisualStyleBackColor = true;
             this.mergeRb.CheckedChanged += new System.EventHandler(this.MergeRb_CheckedChanged);
             // 
-            // radioButton4
+            // countingRb
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(136, 89);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.countingRb.AutoSize = true;
+            this.countingRb.Location = new System.Drawing.Point(136, 89);
+            this.countingRb.Name = "countingRb";
+            this.countingRb.Size = new System.Drawing.Size(89, 17);
+            this.countingRb.TabIndex = 4;
+            this.countingRb.TabStop = true;
+            this.countingRb.Text = "Counting Sort";
+            this.countingRb.UseVisualStyleBackColor = true;
+            this.countingRb.CheckedChanged += new System.EventHandler(this.CountingRb_CheckedChanged);
             // 
             // radioButton5
             // 
@@ -197,7 +198,7 @@
             this.Controls.Add(this.radioButton7);
             this.Controls.Add(this.radioButton6);
             this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.countingRb);
             this.Controls.Add(this.mergeRb);
             this.Controls.Add(this.insertRb);
             this.Controls.Add(this.bubbleRb);
@@ -217,7 +218,7 @@
         private System.Windows.Forms.RadioButton bubbleRb;
         private System.Windows.Forms.RadioButton insertRb;
         private System.Windows.Forms.RadioButton mergeRb;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton countingRb;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
