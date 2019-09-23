@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Text;
 using Sorts.Utils;
 
 namespace Sorts.Sort
 {
-    public class InsertionSort : ISort
+    public class InsertionSort : ISorter
     {
-        public void Sort(int[] arr, TextBox target)
+        public string Sort(int[] arr)
         {
-            for (int i =1; i<arr.Length; i++)
+            var stringBuilder = new StringBuilder();
+
+            for (int i = 1; i < arr.Length; i++)
             {
                 int j = i - 1;
-                while (j>=0 && arr[j] > arr[j+1])
+                while (j >= 0 && arr[j] > arr[j + 1])
                 {
                     //да, мне лень это в функцию вынести...
                     int t = arr[j];
@@ -23,8 +20,11 @@ namespace Sorts.Sort
                     arr[j + 1] = t;
                     j--;
                 }
-                target.Text += ArrayExtentions.GetIterationResult(i, arr);
+
+                stringBuilder.Append(arr.GetIterationResult(i));
             }
+
+            return stringBuilder.ToString();
         }
     }
 }

@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sorts.Sort
+﻿namespace Sorts.Sort
 {
-    public interface ISort
+    public interface ISorter
     {
-       void Sort(int[] arr, System.Windows.Forms.TextBox target);
+       string Sort(int[] arr);
     }
 }
