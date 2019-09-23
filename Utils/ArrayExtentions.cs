@@ -1,24 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace Sorts.Utils
 {
-    public static class ArrayExtentions
+    public static class ArrayExtensions
     {
-        public static string ToText(this int[] arr)
+        public static string ToText(this int[] input)
         {
-            string arrString = string.Empty;
-            for (int i = 0; i < arr.Length; i++)
-                arrString += arr[i].ToString() + "   ";
-            return arrString;
+            var result = new StringBuilder();
+
+            foreach (var t in input)
+                result.Append(t + "   ");
+
+            return result.ToString();
         }
 
-        public static string GetIterationResult(int i, int[] arr)
+        public static string GetIterationResult(this int[] arr, int i)
         {
-            string result = String.Format("Итерация №{0} ------- {1} \r\n", i, arr.ToText());
+            var result = string.Format("Итерация №{0} ------- {1} \r\n", i, arr.ToText());
             return result;
         }
     }
