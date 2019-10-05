@@ -58,7 +58,7 @@
     <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Sort\CountingSort.cs" />
     <Compile Include="Sort\InsertionSort.cs" />
-    <Compile Include="Sort\ISort.cs" />
+    <Compile Include="Sort\ISorter.cs" />
     <Compile Include="Sort\MergeSort.cs" />
     <Compile Include="Utils\ArrayExtentions.cs" />
     <EmbeddedResource Include="MainForm.resx">
