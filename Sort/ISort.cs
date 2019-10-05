@@ -2,6 +2,6 @@
 {
     public interface ISorter
     {
-       string Sort(int[] arr); 
+       string Sort(int[] arr);
     }
 }
