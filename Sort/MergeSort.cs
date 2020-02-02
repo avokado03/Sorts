@@ -38,7 +38,7 @@ namespace Sorts.Sort
             MergeSorting(left);
             MergeSorting(right);
             Merge(left, right, arr);
-            Builder.Append(arr.ToText() + "\r\n");
+            Builder.Append(arr.ToText() + "\r\n ");
         }
         private static void Merge(int[] left, int[] right, int[] A)
         {

@@ -11,7 +11,7 @@ namespace Sorts.Utils
             int[] arr = new int[10];
 
             for (int i = 0; i < arr.Length; i++)
-                arr[i] = Random.Next(0, 15);
+                arr[i] = Random.Next(1, 10);
 
             return arr;
         }

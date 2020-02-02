@@ -41,6 +41,7 @@
             this.generateBtn = new System.Windows.Forms.Button();
             this.sortBtn = new System.Windows.Forms.Button();
             this.resultBox = new System.Windows.Forms.TextBox();
+            this.VisualPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -182,14 +183,23 @@
             this.resultBox.Multiline = true;
             this.resultBox.Name = "resultBox";
             this.resultBox.ReadOnly = true;
-            this.resultBox.Size = new System.Drawing.Size(569, 396);
+            this.resultBox.Size = new System.Drawing.Size(569, 97);
             this.resultBox.TabIndex = 12;
+            // 
+            // VisualPanel
+            // 
+            this.VisualPanel.BackColor = System.Drawing.Color.White;
+            this.VisualPanel.Location = new System.Drawing.Point(12, 314);
+            this.VisualPanel.Name = "VisualPanel";
+            this.VisualPanel.Size = new System.Drawing.Size(568, 293);
+            this.VisualPanel.TabIndex = 13;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 619);
+            this.Controls.Add(this.VisualPanel);
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.sortBtn);
             this.Controls.Add(this.generateBtn);
@@ -227,6 +237,7 @@
         private System.Windows.Forms.Button generateBtn;
         private System.Windows.Forms.Button sortBtn;
         private System.Windows.Forms.TextBox resultBox;
+        private System.Windows.Forms.Panel VisualPanel;
     }
 }
 
