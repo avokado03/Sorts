@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28809.33
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorts", "Sorts.csproj", "{5F3B3EE6-A85B-4DDF-817F-FE9B3A676D84}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortsVisualization", "SortsVisualization.csproj", "{5F3B3EE6-A85B-4DDF-817F-FE9B3A676D84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visualization", "..\Visualization\Visualization.csproj", "{EB1343DE-D6E7-4CFD-8093-5AFA3225B891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visualization", "..\Visualization\Visualization.csproj", "{EB1343DE-D6E7-4CFD-8093-5AFA3225B891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "..\SortAlgorithms\SortingAlgorithms.csproj", "{4D3B2BD7-662B-4C43-B412-FBB4C1D48C7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EB1343DE-D6E7-4CFD-8093-5AFA3225B891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB1343DE-D6E7-4CFD-8093-5AFA3225B891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB1343DE-D6E7-4CFD-8093-5AFA3225B891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3B2BD7-662B-4C43-B412-FBB4C1D48C7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3B2BD7-662B-4C43-B412-FBB4C1D48C7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3B2BD7-662B-4C43-B412-FBB4C1D48C7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3B2BD7-662B-4C43-B412-FBB4C1D48C7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

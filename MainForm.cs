@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Sorts.Sort;
-using Sorts.Utils;
 using Visualization;
+using SortingAlgorithms.Interfaces;
+using SortingAlgorithms.Sorts;
+using SortingAlgorithms.Utils;
 
 namespace Sorts
 {
