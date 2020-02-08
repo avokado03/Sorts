@@ -80,12 +80,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SortAlgorithms\SortingAlgorithms.csproj">
-      <Project>{4d3b2bd7-662b-4c43-b412-fbb4c1d48c7a}</Project>
+    <ProjectReference Include="SortAlgorithms\SortingAlgorithms.csproj">
+      <Project>{8ea103b3-a246-44c3-8521-a8581d5e964c}</Project>
       <Name>SortingAlgorithms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Visualization\Visualization.csproj">
-      <Project>{eb1343de-d6e7-4cfd-8093-5afa3225b891}</Project>
+    <ProjectReference Include="Visualization\Visualization.csproj">
+      <Project>{60fc2771-98f5-438f-97e5-fb3c6141924f}</Project>
       <Name>Visualization</Name>
     </ProjectReference>
   </ItemGroup>
